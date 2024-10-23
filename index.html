@@ -3,42 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakshith’s Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Rakshit | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to Rakshith’s Portfolio</h1>
         <nav>
+            <div class="logo">Rakshit</div>
             <ul>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <section id="hero">
+        <h1>Hi, I'm <span>Rakshit</span></h1>
+        <p>Full Stack Developer | AI Enthusiast</p>
+        <a href="#projects" class="btn">View Projects</a>
+    </section>
+
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi, I'm Rakshith, a fullstack developer with an interest in machine learning and AI integration.</p>
+        <p>I am a passionate full-stack developer with a knack for building AI-integrated websites and applications. I love to solve real-world problems using technology and I am constantly learning new things in the field of machine learning and development.</p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/username/project1">Project 1</a> – A brief description of the project.</li>
-            <li><a href="https://github.com/username/project2">Project 2</a> – A brief description of the project.</li>
+        <div class="project-list">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of the project.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of the project.</p>
+                <a href="#">View Project</a>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Machine Learning</li>
+            <!-- Add more skills -->
         </ul>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: rakshithgoudbrg.com</p>
-        <p>LinkedIn: <a href="www.linkedin.com/in/rakshith-goud-billola-52b546226">Your LinkedIn</a></p>
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
-        <p>© 2024 Rakshit</p>
+        <p>© 2024 Rakshit. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
     </footer>
 </body>
 </html>
